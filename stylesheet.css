@@ -1,0 +1,97 @@
+body{
+    background-color: #DBDBDB;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: #7458B3;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar h2{
+    color: #fff;
+    padding-left: 30px;
+    font-weight: 400;
+}
+
+h1{
+    padding: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h3{
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #BFBFBF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.navLeft{
+    background-color: #7458B3;
+    height: 100vh;
+    /*position: fixed;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    float: left;
+    
+}
+
+.card{
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+    padding: 20px;
+    border-radius: 27px;
+    margin: 20px;
+    background-color: #F7F7F7;
+    height: 400px;
+}
+
+.bottom-card{
+    height: 250px;
+    
+}
+
+.top-chart-title{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+
+.bottom-chart-title{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+
+#expenditure, #consumption{
+    margin-top: 90px;
+}
+
+.prior-deliveries{
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+    border-radius: 27px;
+    margin: 10px;
+    background-color: #F7F7F7;
+    height: 825px;
+}
+
+.bottom-carousel-title{
+    padding-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

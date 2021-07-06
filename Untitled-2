@@ -1,0 +1,109 @@
+                        <div class="row">
+                <div class="h3 bottom-chart-title">Expenditure</div>
+              <div class="card">
+                  <canvas class="p-2" id="myChart2" ></canvas>
+                  
+                  <script>
+                      
+                        var ctx = document.getElementById('myChart2').getContext("2d");
+
+                        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+                        gradientStroke.addColorStop(0, "rgba(116, 88, 179, 1)");
+                        gradientStroke.addColorStop(1, "rgba(0, 0, 0, 0.5)");
+
+                        var gradientFill = ctx.createLinearGradient(0, 700, 0, 0);
+                        gradientFill.addColorStop(0, "rgba(116, 88, 179, 0.05)");
+                        gradientFill.addColorStop(0.65, "rgba(116, 88, 179, 0.1)");
+                      gradientFill.addColorStop(0.75, "rgba(116, 88, 179, 0.2)");
+                      gradientFill.addColorStop(0.85, "rgba(116, 88, 179, 0.6)");
+                        gradientFill.addColorStop(1, "rgba(116, 88, 179, 1)");
+
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+                                datasets: [{
+                                    label: "Expenditure",
+                                    borderColor: "#603F8B",
+                                    pointBorderColor: "#603F8B",
+                                    pointBackgroundColor: "#603F8B",
+                                    pointHoverBackgroundColor: "#603F8B",
+                                    pointHoverBorderColor: "#603F8B",
+                                    pointBorderWidth: 5,
+                                    pointHoverRadius: 10,
+                                    pointHoverBorderWidth: 1,
+                                    pointRadius: 3,
+                                    fill: true,
+                                    backgroundColor: gradientFill,
+                                    borderWidth: 4,
+                                    data: [100, 120, 150, 170, 180, 170, 160]
+                                }]
+                            },
+                            options: {
+                                legend: {
+                                    position: "bottom"
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            fontColor: "rgba(0,0,0,0.5)",
+                                            fontStyle: "bold",
+                                            beginAtZero: true,
+                                            maxTicksLimit: 5,
+                                            padding: 20
+                                        },
+                                        gridLines: {
+                                            drawTicks: false,
+                                            display: false
+                                        }
+
+                                    }],
+                                    xAxes: [{
+                                        gridLines: {
+                                            zeroLineColor: "transparent"
+                                        },
+                                        ticks: {
+                                            padding: 20,
+                                            fontColor: "rgba(0,0,0,0.5)",
+                                            fontStyle: "bold"
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                      
+//                      //Setup
+//                    const labels = [
+//                        'January',
+//                        'February',
+//                        'March',
+//                        'April',
+//                        'May',
+//                        'June',
+//                    ];
+//                    const data = {
+//                        labels: labels,
+//                        datasets: [{
+//                            label: 'Products',
+//                            backgroundColor: 'rgb(255, 99, 132)',
+//                            borderColor: 'rgb(255, 99, 132)',
+//                            data: [0, 10, 5, 2, 20, 30, 45],
+//                        }]
+//                    };
+//
+//                    //Config
+//                    const config = {
+//                        type: 'line',
+//                        data,
+//                        options: {}
+//                    };
+//
+//                      var myChart = new Chart(
+//                        document.getElementById('myChart'),
+//                        config
+//                      );
+
+
+                  </script>
+              </div>
+          </div>
